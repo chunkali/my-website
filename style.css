@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title-big {
+    color: red;
+    font-size: 50px;
+}
+
+table th {
+    color: yellowgreen;
+}
+
+table td {
+    color: #CD2BE2;
+}
+
+.bigwords {
+    color: aqua;
+    font-size: 20px;
+}
+
+
+.link-external {
+    color: pink;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 200px;
+}
+
+.header-title {
+    color: gold;
+    font-size: 60px;
+    padding: 180px 120px 0px 120px;
+    font-family: "Rockwell", serif;
+    line-height: 1.42;
+}
+
+.header-title:hover {
+    color:red;
+}
+
+.header {
+    background-image: url(img/fond-carreau.png);
+    padding: 10px;
+}
+
+.header-2 {
+    padding: 10px;
+}
+
+.header-title {
+    margin-top: 0;
+}
+
+.main {
+    background: gold;
+    padding: 65px 120px 65px 120px;
+    color: black;
+}
+
+.footer {
+    background:red;
+    padding: 10px 20px;
+}
+
+.logo {
+    position: fixed;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    margin: 65px 50px;
+}
+
+.header-nav a {
+    padding: 5px 30px;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    height: auto;
+}
+
+.header-nav a:hover {
+    color: white;
+    background-color: #FFD700;
+}
+
+.indication {
+    padding: 24px 120px 0px 120px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+hr {
+    margin: 24px 290px 160px 120px;
+}
+
+.here {
+    color: red;
+}
+
+h2 {
+    color: white;
+    font-size: 30px;
+    padding: 0px 0px 30px 0px;
+}
+
+.number {
+    color: red;
+}
+
+h3 {
+    padding: 0px 40px;
+}
+
+p {
+    padding: 0px 0px 0px 60px;
+}
+
+.link-external {
+    display: flex;
+    justify-content: center;
+}
+
+.link-works {
+    color: white;
+    font-size: 20px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: black;
+    max-width: 100%;
+    max-height: auto;
+    padding: 25px;
+    text-transform: uppercase;
+}
+
+form {
+    text-align: center;
+}
+
+@media (max-width: 100px){
+    .header-nav { 
+        flex-direction: column;
+        height: auto;
+    }
+}
