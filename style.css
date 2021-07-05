@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -7,20 +11,6 @@ body {
     color: red;
     font-size: 50px;
 }
-
-table th {
-    color: yellowgreen;
-}
-
-table td {
-    color: #CD2BE2;
-}
-
-.bigwords {
-    color: aqua;
-    font-size: 20px;
-}
-
 
 .link-external {
     color: pink;
@@ -32,19 +22,22 @@ input[type="email"] {
 }
 
 .header-title {
-    color: gold;
+    color: #FFD700;
     font-size: 60px;
     padding: 180px 120px 0px 120px;
-    font-family: "Rockwell", serif;
+    font-family: "Suez One", serif;
     line-height: 1.42;
 }
 
-.header-title:hover {
+.header-title span:hover {
     color:red;
+    transition: color .3s;
 }
 
 .header {
-    background-image: url(img/fond-carreau.png);
+    background-image: linear-gradient(to bottom, #FFFFFF 15%, #FFFFFF00), url(img/fond-carreau.png);
+    background-size: cover;
+    background-attachment: fixed;
     padding: 10px;
 }
 
@@ -56,11 +49,24 @@ input[type="email"] {
     margin-top: 0;
 }
 
-.main {
-    background: gold;
-    padding: 65px 120px 65px 120px;
-    color: black;
+div#artcl {
+    display: flex;
 }
+
+.main {
+    background: #FFD700;
+    color: black;
+    width: 50%;
+    padding: 40px 120px;
+}
+
+.main2 {
+    background: #FFD700;
+    color: black;
+    width: 50%;
+    padding: 40px 120px;
+}
+
 
 .footer {
     background:red;
@@ -88,8 +94,10 @@ input[type="email"] {
 }
 
 .header-nav a:hover {
-    color: white;
     background-color: #FFD700;
+    border-radius: 10px;
+    transition: background-color .5s;
+    color: white;
 }
 
 .indication {
@@ -137,7 +145,6 @@ p {
     max-width: 100%;
     max-height: auto;
     padding: 25px;
-    text-transform: uppercase;
 }
 
 form {
@@ -149,4 +156,25 @@ form {
         flex-direction: column;
         height: auto;
     }
+}
+
+article img {
+    height: 400px;
+    width: auto;
+    padding: 20px;
+}
+
+article figure {
+    display: inline-block;
+    justify-content: center;
+    transition: transform cubic-bezier(0.77, 0, 0.2, 0.99) .5s;
+}
+
+article figure:hover {
+    transform: scale(1.2);
+}
+
+.legend {
+    display: flex;
+    justify-content: left;
 }
